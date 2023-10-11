@@ -1,0 +1,203 @@
+span.title {
+    font-weight: bold;
+  }
+  
+  span.em {
+    font-weight: bold;
+  }
+  
+  .separator {
+    border-bottom: 1px solid #e3e8ee;
+  }
+  
+  a.field {
+    font-weight: 600;
+    font-size: .8rem;
+  }
+  
+  span.parent-field {
+    font-weight: 600;
+    color:#a3acb9;
+    font-size: .85em;
+  }
+  
+  span.type {
+    color: #8792a2;
+    font-size: .7rem;
+    margin-right: 4px;
+  }
+  
+  span.version {
+    color: #8792a2;
+    font-size: .7rem;
+    float: right;
+  }
+  
+  span.faint {
+    color: #8792a2;
+  }
+
+
+/* Custom Styles */
+
+
+.md-nav__item .md-nav__link--active > svg{
+  width: auto !important;
+}
+
+.md-nav__item .md-nav__link > svg{
+  width: auto !important;
+}
+
+
+a.nolan-anchor {
+  color: #0080FF !important;
+}
+
+a.nolan-anchor:visited {
+  color: #0080FF !important;
+}
+a.nolan-anchor:hover {
+  color: #0080FF !important;
+}
+a.nolan-anchor:active {
+  color: #0080FF !important;
+}
+
+.md-nav__item .md-nav__link--active {
+  color: #0080FF;
+}
+
+.md-nav__item .md-nav__link:hover {
+  color: #0080FF;
+}
+
+:root {
+  --md-typeset-a-color: #0080FF !important;
+  --md-accent-fg-color: #0080FF !important;
+}
+
+:root {
+  --md-admonition-icon--get: url('/assets/images/badge-get.svg')
+}
+
+.article-title {
+  color: #0080FF !important;
+  display: flex;
+  align-items: center;
+}
+
+.article-title-image {
+  max-width: 7% !important;
+  margin-left: 15px;
+}
+
+/* post admonition */
+:root {
+  --md-admonition-icon--post: url('/assets/images/badge-post.svg')
+}
+.md-typeset .admonition.post,
+.md-typeset details.post {
+  border-color: rgb(59, 131, 250);
+}
+.md-typeset .post > .admonition-title,
+.md-typeset .post > summary {
+  background-color: rgba(59, 131, 250, 0.1);
+}
+.md-typeset .post > .admonition-title::before,
+.md-typeset .post > summary::before {
+  background-color: rgb(59, 131, 250);
+  -webkit-mask-image: var(--md-admonition-icon--post);
+          mask-image: var(--md-admonition-icon--post);
+}
+
+/* get admonition */
+:root {
+  --md-admonition-icon--get: url('/assets/images/badge-get.svg')
+}
+.md-typeset .admonition.get,
+.md-typeset details.get {
+  border-color: rgb(90, 197, 98);
+}
+.md-typeset .get > .admonition-title,
+.md-typeset .get > summary {
+  background-color: rgba(90, 197, 97, 0.1);
+}
+.md-typeset .get > .admonition-title::before,
+.md-typeset .get > summary::before {
+  background-color: rgb(90, 197, 97);
+  -webkit-mask-image: var(--md-admonition-icon--get);
+          mask-image: var(--md-admonition-icon--get);
+}
+
+/* put admonition */
+:root {
+  --md-admonition-icon--put: url('/assets/images/badge-put.svg')
+}
+.md-typeset .admonition.put,
+.md-typeset details.put {
+  border-color: rgb(240, 150, 55);
+}
+.md-typeset .put > .admonition-title,
+.md-typeset .put > summary {
+  background-color: rgba(240, 150, 55, 0.1);
+}
+.md-typeset .put > .admonition-title::before,
+.md-typeset .put > summary::before {
+  background-color: rgb(240, 150, 55);
+  -webkit-mask-image: var(--md-admonition-icon--put);
+          mask-image: var(--md-admonition-icon--put);
+}
+
+
+/* patch admonition */
+:root {
+  --md-admonition-icon--patch: url('/assets/images/badge-patch.svg')
+}
+.md-typeset .admonition.patch,
+.md-typeset details.patch {
+  border-color: rgb(117, 79, 246);
+}
+.md-typeset .patch > .admonition-title,
+.md-typeset .patch > summary {
+  background-color: rgba(117, 79, 246, 0.1);
+}
+.md-typeset .patch > .admonition-title::before,
+.md-typeset .patch > summary::before {
+  background-color: rgb(117, 79, 246);
+  -webkit-mask-image: var(--md-admonition-icon--patch);
+          mask-image: var(--md-admonition-icon--patch);
+}
+
+/* delete admonition */
+:root {
+  --md-admonition-icon--delete: url('/assets/images/badge-delete.svg')
+}
+.md-typeset .admonition.delete,
+.md-typeset details.delete {
+  border-color: rgb(234, 57, 75);
+}
+.md-typeset .delete > .admonition-title,
+.md-typeset .delete > summary {
+  background-color: rgba(234, 57, 75, 0.1);
+}
+.md-typeset .delete > .admonition-title::before,
+.md-typeset .delete > summary::before {
+  background-color: rgb(234, 57, 75);
+  -webkit-mask-image: var(--md-admonition-icon--delete);
+          mask-image: var(--md-admonition-icon--delete);
+}
+
+/* article h1 {
+  color: #0080FF !important;
+} */
+
+  /* :root {
+    --md-primary-fg-color: #fff;
+    --md-primary-fg-color--light: #ffffffb3;
+    --md-primary-fg-color--dark: #00000012;
+    --md-primary-bg-color: #000000de;
+    --md-primary-bg-color--light: #0000008a;
+    --md-typeset-a-color: #4051b5
+    --md-typeset-a-color: #0080FF
+  } */

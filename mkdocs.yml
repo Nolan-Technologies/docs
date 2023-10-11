@@ -1,0 +1,187 @@
+site_name: Nolan API Documentation                                            # site title and homepage name
+site_description: 'Next generation payment solutions'                  # site description
+site_url: 'https://docs.nolantechnologies.com'                                  # url where site is deployed
+repo_name: 'Nolan-Technologies/docs'                                                 # name of the relevant git repo for top right element
+repo_url: 'https://github.com/Nolan-Technologies/docs'                               # relevant github link
+copyright: Copyright &copy; 2023 Nolan Technologies, Inc.                       # copyright string for the footer
+docs_dir: 'site/content'                                                        # directory where the documentation files live
+site_dir: 'docs'                                                                # output directory for mkdocs build
+extra_css:                                                                      # custom styles
+  - stylesheets/extra.css                                                       # # path to extra.css custom styles
+extra:                                                                          # extra stuff
+  social:                                                                       # # social footer icons and links
+    - icon: fontawesome/brands/twitter                                          # # # twitter icon
+      link: https://twitter.com/nolantech_                                      # # # link to Nolan twitter page
+    - icon: fontawesome/brands/facebook                                         # # # facebook icon
+      link: https://www.facebook.com/nolantechnologies                          # # # link to Nolan facebook page
+
+nav:
+  - Home: index.md
+  - Documentation:
+    - Introduction: docs/introduction.md
+    - Nolan Basics:
+      - Environments: docs/basics/environments.md
+      - Rate Limits: docs/basics/rate-limits.md
+      - Timeouts: docs/basics/timeouts.md
+      - Pagination: docs/basics/pagination.md
+      - Idempotency: docs/basics/idempotency.md
+      - Webhooks: docs/basics/webhooks.md
+    - Getting Started:
+      - Request API Key: docs/getting-started/request-api-key.md
+      - Making API Calls: docs/getting-started/api-call.md
+      - Nolan Postman Collection: docs/getting-started/postman.md
+    - API Endpoints:
+      - Banking:
+        - Accounts:
+          - Create Account: docs/endpoints/banking/accounts/create-account.md
+          - Close Account: docs/endpoints/banking/accounts/close-account.md
+          - Reopen Account: docs/endpoints/banking/accounts/reopen-account.md
+          - Get by Id: docs/endpoints/banking/accounts/get-account.md
+        - Applications:
+          - Create Application: docs/endpoints/banking/applications/create-application.md
+          - Get by Id: docs/endpoints/banking/applications/get-application.md
+        - Application Documents:
+          - Upload Front: docs/endpoints/banking/application-documents/upload-front.md
+          - Upload Back: docs/endpoints/banking/application-documents/upload-back.md
+        - ATM Locations:
+          - Get Locations: docs/endpoints/banking/atm-locations/get-locations.md
+        - Authorizations: 
+          - Get List: docs/endpoints/banking/authorizations/list-authorizations.md
+        - Cards:
+          - Create Virtual Card: docs/endpoints/banking/cards/create-virtual-card.md
+          - Create Physical Card: docs/endpoints/banking/cards/create-physical-card.md
+          - Report Lost: docs/endpoints/banking/cards/report-lost.md
+          - Report Stolen: docs/endpoints/banking/cards/report-stolen.md
+          - Freeze Card: docs/endpoints/banking/cards/freeze-card.md
+          - Unfreeze Card: docs/endpoints/banking/cards/unfreeze-card.md
+          - Replace Card: docs/endpoints/banking/cards/replace-card.md
+          - Close Card: docs/endpoints/banking/cards/close-card.md
+          - Get Card: docs/endpoints/banking/cards/get-card.md
+          - Get Cards: docs/endpoints/banking/cards/get-cards.md
+          - Get PIN Status: docs/endpoints/banking/cards/get-pin-status.md
+          - Mobile Wallet: docs/endpoints/banking/cards/mobile-wallet.md
+        - Customers:
+          - Get Customer: docs/endpoints/banking/customers/get-customer.md
+        - Customer Tokens:
+          - Token Verification: docs/endpoints/banking/customer-tokens/token-verification.md
+        - Disputes:
+          - List Disputes: docs/endpoints/banking/disputes/list-disputes.md
+        - External Accounts:
+          - Create Account: docs/endpoints/banking/external-accounts/create-account.md
+          - Delete Account: docs/endpoints/banking/external-accounts/delete-account.md
+          - List Accounts: docs/endpoints/banking/external-accounts/list-accounts.md
+        - Fees:
+          - Create Fee: docs/endpoints/banking/fees/create-fee.md
+        - Payments:
+          - Get Payment: docs/endpoints/banking/payments/get-payment.md
+          - Get Payments: docs/endpoints/banking/payments/get-payments.md
+          - Create Payment: docs/endpoints/banking/payments/create-payment.md
+        - Statements:
+          - Get by Account: docs/endpoints/banking/statements/get-by-account.md
+          - Get HTML: docs/endpoints/banking/statements/get-html.md
+        - Transactions:
+          - Get Transactionn: docs/endpoints/banking/transactions/get-transaction.md
+          - Get Transactions: docs/endpoints/banking/transactions/get-transactions.md
+      - Rewards:
+        - Reconciliations: 
+          - Get by Date: docs/endpoints/rewards/reconciliations/get-by-date.md
+        - Reward Offers:
+          - Get Local Offers: docs/endpoints/rewards/reward-offers/get-local-offers.md
+          - Get National Offers: docs/endpoints/rewards/reward-offers/get-national-offers.md
+        - Reward Payments:
+          - Get Payments: docs/endpoints/rewards/reward-payments/list-payments.md
+        - Rewardable Transactions:
+          - Create Transaction: docs/endpoints/rewards/rewardable-transactions/create-transaction.md
+          - List Transactions: docs/endpoints/rewards/rewardable-transactions/list-transactions.md
+        - Rewards:
+          - Get Reward: docs/endpoints/rewards/rewards/get-reward.md
+          - List Rewards: docs/endpoints/rewards/rewards/list-rewards.md
+        - Users:
+          - List Users: docs/endpoints/rewards/users/list-users.md
+          - Create User: docs/endpoints/rewards/users/create-user.md
+          - Update User: docs/endpoints/rewards/users/update-user.md
+        - User Cards:
+          - Create Card: docs/endpoints/rewards/user-cards/create-card.md
+          - Get Card: docs/endpoints/rewards/user-cards/get-card.md
+          - Update Card: docs/endpoints/rewards/user-cards/update-card.md
+        - Viewed Reward Offers:
+          - Create Offer: docs/endpoints/rewards/viewed-reward-offers/create-offer.md
+          - List Offers: docs/endpoints/rewards/viewed-reward-offers/list-offers.md
+    - Errors: docs/errors.md
+
+
+theme:
+  name: material  # material theme
+  custom_dir: site/overrides
+  palette:
+    primary: white  # white base theme
+    accent: custom # custom theme using Nolan colors
+  # palette:
+  #   - scheme:
+  #     primary: white  # white base theme
+  #     accent: custom # custom theme using Nolan colors
+  #     toggle:
+  #       icon: material/weather-night 
+  #       name: Switch to dark mode
+  #         # Palette toggle for dark mode
+  #   - scheme: slate
+  #     primary: black  # black base theme
+  #     accent: custom # custom theme using Nolan colors
+  #     toggle:
+  #       icon: material/weather-sunny
+  #       name: Switch to light mode
+  # font: false # don't load fonts from google, fallback to system fonts
+  icon:
+    annotation: material/alert-decagram
+  font:
+    text: Inter
+    code: Roboto Mono
+  logo: assets/Nolan_appicon.svg # set the nav logo
+  favicon: assets/Nolan_appicon.svg # set the favicon
+  language: en # set site language to english
+  features:
+    - navigation.tabs # render top-level sections in menu bar below header
+    - navigation.instant # enable instant loading
+    - navigation.path # add breadcrumb navigation above page title
+    - search.suggest # display the likeliest completion for last word in search
+    - content.code.annotate # add tooltips to code annotation
+
+markdown_extensions:
+  - admonition # callouts
+  - meta
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - footnotes
+#   - pymdownx.tabbed:
+#       alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - site/overrides/.icons
+#       options:
+#         custom_icons:
+#           - site/overrides/.icons
+
+plugins:
+  - search
+  # - social:
+  #     cards_layout: default/only/image
+  #     cards_layout_options:
+  #       background_image: assets/images/social-sharing.png
+        # background_color: transparent
+        # color: "#ffffff"
+        # font_family: Inter
+        # logo: layouts/logo.png
+        # title: Nolan API Documentation
+        # description: Developer docs for the Nolan API
+
+
+watch:
+  - site/overrides
