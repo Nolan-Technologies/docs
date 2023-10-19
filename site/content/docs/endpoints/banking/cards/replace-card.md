@@ -44,7 +44,7 @@ curl -i -X POST "https://api-s.nolantechnologies.com/v0/banking/cards/123456/rep
 
 ## Example Response
 ```text
-HTTP/1.1 201 OK
+HTTP/1.1 201 CREATED
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
 Content-Length: 332

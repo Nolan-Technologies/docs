@@ -27,7 +27,7 @@ curl -i -X GET "https://api-s.nolantechnologies.com/v0/banking/customers/12345/t
 
 ## Example Response
 ```text
-HTTP/1.1 201 OK
+HTTP/1.1 201 CREATED
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
 Content-Length: 332
