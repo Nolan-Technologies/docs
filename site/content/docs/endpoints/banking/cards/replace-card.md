@@ -13,6 +13,10 @@ Creates and ships a replacement physical debit card to an individual. [^ 1]
 `https://api-s.nolantechnologies.com/v0/banking/cards/:cardId/replace`
 
 ## Endpoint Data
+=== "Body"    
+    | Property Name     | Description                                    | Type   | Required | Allowed Values               |
+    | `shippingAddress` | The address that the card should be shipped to | Object | Yes      | Any                          | 
+
 === "URL Parameters"
     | Parameter Name | Description      | 
     | -------------- | ---------------- |
