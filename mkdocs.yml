@@ -80,7 +80,7 @@ nav:
           - Get by Account: docs/endpoints/banking/statements/get-by-account.md
           - Get HTML: docs/endpoints/banking/statements/get-html.md
         - Transactions:
-          - Get Transactionn: docs/endpoints/banking/transactions/get-transaction.md
+          - Get Transaction: docs/endpoints/banking/transactions/get-transaction.md
           - Get Transactions: docs/endpoints/banking/transactions/get-transactions.md
       - Rewards:
         - Reconciliations: 

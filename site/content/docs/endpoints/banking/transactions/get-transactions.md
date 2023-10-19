@@ -10,7 +10,7 @@ icon: 'http/badge-get'
 Get a list of transactions by customer id or account id. [^ 1].
 
 ## Endpoint URL
-`https://api-s.nolantechnologies.com/v0/banking/transactions?:customerId&:accountId:limit&:offset`
+`https://api-s.nolantechnologies.com/v0/banking/transactions?customerId={customerId}&accountId={accountId}$limit={limit}&offset={offset}`
 
 ## Endpoint Data
 === "Query Parameters"

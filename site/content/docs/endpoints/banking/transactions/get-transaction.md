@@ -10,14 +10,13 @@ icon: 'http/badge-get'
 Get a single transaction by transaction id and account id. [^ 1].
 
 ## Endpoint URL
-`https://api-s.nolantechnologies.com/v0/banking/transactions/:transactionId?:accountId`
+`https://api-s.nolantechnologies.com/v0/banking/transactions/:transactionId?accountId={accountId}`
 
 ## Endpoint Data
 === "URL Parameters"
     | Parameter Name  | Description          |
     | --------------- | -------------------- |
     | `transactionId` | Unit transaction ID  |
-    | `accountId`     | Unit account ID      |
 
 === "Query Parameters"
     | Parameter Name  | Description          |
