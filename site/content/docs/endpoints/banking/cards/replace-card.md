@@ -29,7 +29,17 @@ Creates and ships a replacement physical debit card to an individual. [^ 1]
 curl -i -X POST "https://api-s.nolantechnologies.com/v0/banking/cards/123456/replace" \
   -H "Accept: application/json" \
   -H "Content-Type: application/json" \
-  -H "X-Nolan-API-Key: YourNolanApiKey" 
+  -H "X-Nolan-API-Key: YourNolanApiKey" \
+   --data '{
+        "shippingAddress": {
+            "street": "123 Main St"
+            , "street2": "Suite 100"
+            , "city": "Dallas"
+            , "state": "TX"
+            , "postalCode": "75201"
+            , "country": "US"
+        }
+   }
 ```
 
 ## Example Response
