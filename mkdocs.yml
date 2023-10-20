@@ -62,6 +62,7 @@ nav:
           - Mobile Wallet: docs/endpoints/banking/cards/mobile-wallet.md
         - Customers:
           - Get Customer: docs/endpoints/banking/customers/get-customer.md
+          - Get Data Collection: docs/endpoints/banking/customers/get-data-collection.md
         - Customer Tokens:
           - Token Verification: docs/endpoints/banking/customer-tokens/token-verification.md
         - Disputes:
